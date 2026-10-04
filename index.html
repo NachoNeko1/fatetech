@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f6fa">
+  <meta name="description" content="Fate's blog - Fatetech命运科技，记录技术、设计与生活。">
+  <title>Fate‘s blog-Fatetech命运科技</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Fatetech命运科技首页">
+      <span class="brand-mark">F</span><span>Fatetech命运科技</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a class="active" href="./">首页</a><a href="#articles">文章</a><a href="about.html">关于</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="search-toggle" aria-label="搜索文章" title="搜索"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-button" id="theme-toggle" aria-label="切换主题" title="切换主题"><svg viewBox="0 0 24 24"><path d="M20.2 15.2A8.4 8.4 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg></button>
+      <button class="menu-button" id="menu-toggle" aria-label="打开菜单"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> PERSONAL BLOG · EST. 2026</div>
+        <h1>Fate‘s <span>blog</span></h1>
+        <p class="hero-subtitle">Fatetech命运科技</p>
+        <p class="hero-desc">记录技术、设计与生活。保持好奇，持续创造，探索每一个值得记录的瞬间。</p>
+        <div class="hero-links">
+          <a class="primary-link" href="#articles">阅读文章 <span>↗</span></a>
+          <a class="text-link" href="about.html">关于本站 <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-large"></div><div class="orb orb-small"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="art-label"><span class="art-symbol">✳</span><span>FATETECH<br><small>IDEAS & TECHNOLOGY</small></span></div>
+        <div class="art-index">01 <i>—</i> 26</div>
+      </div>
+    </section>
+    <section class="content-section" id="articles">
+      <div class="section-heading"><div><p class="eyebrow">THE JOURNAL</p><h2>最新文章</h2></div><span class="section-note">想法与记录，持续更新</span></div>
+      <div class="search-panel" id="search-panel" hidden><input id="search-input" type="search" placeholder="搜索文章标题、摘要或标签…" autocomplete="off"><button id="search-clear" aria-label="清除搜索">×</button></div>
+      <div class="article-grid" id="article-grid">
+        <article class="article-card featured">
+          <a class="card-cover cover-violet" href="posts/welcome.html"><span class="cover-kicker">WELCOME / 001</span><span class="cover-glyph">✳</span><span class="cover-caption">A PLACE FOR IDEAS</span></a>
+          <div class="card-body"><div class="card-meta"><span>2026.10.02</span><span class="meta-dot">•</span><span>3 分钟阅读</span></div><h3><a href="posts/welcome.html">欢迎来到 Fate‘s blog</a></h3><p>这是博客的第一篇文章。记录技术、设计、灵感，以及一路上遇到的有趣事情。</p><div class="tag-row"><span>随笔</span><span>博客</span></div></div>
+        </article>
+        <article class="article-card">
+          <a class="card-cover cover-blue" href="posts/github-pages.html"><span class="cover-kicker">GUIDE / 002</span><span class="cover-glyph">⌘</span><span class="cover-caption">BUILD & DEPLOY</span></a>
+          <div class="card-body"><div class="card-meta"><span>2026.10.02</span><span class="meta-dot">•</span><span>5 分钟阅读</span></div><h3><a href="posts/github-pages.html">使用 GitHub Pages 发布静态博客</a></h3><p>从创建仓库到自动部署，整理一份简洁的 GitHub Pages 发布流程。</p><div class="tag-row"><span>教程</span><span>GitHub</span></div></div>
+        </article>
+        <article class="article-card">
+          <a class="card-cover cover-green" href="posts/design-notes.html"><span class="cover-kicker">NOTES / 003</span><span class="cover-glyph">⌁</span><span class="cover-caption">DESIGN NOTES</span></a>
+          <div class="card-body"><div class="card-meta"><span>2026.10.02</span><span class="meta-dot">•</span><span>2 分钟阅读</span></div><h3><a href="posts/design-notes.html">关于设计与表达的一些记录</a></h3><p>好的设计不只是视觉效果，也关乎信息组织、体验和清晰的表达。</p><div class="tag-row"><span>设计</span><span>灵感</span></div></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>没有找到匹配的文章。</p>
+    </section>
+    <section class="bottom-note"><span class="note-icon">✦</span><div><strong>Stay curious. Keep creating.</strong><p>把灵感变成作品，把过程留作记录。</p></div><a href="about.html">了解更多 <span>↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="./">Fatetech命运科技</a><span>© 2026 Fate‘s blog. Built with care.</span><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
